@@ -5,7 +5,7 @@ bd = _sqlite3.connect("2048.sqlite")
 cur = bd.cursor()
 cur.execute("""
 create table if not exists RECORDS  (
-    name text,
+    name text ,
     score integer
 )""")
 cur.execute("""
